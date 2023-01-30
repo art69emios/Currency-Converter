@@ -1,0 +1,53 @@
+<div class="wrapper">
+        <header>
+                <div class="result">
+                        <p class="currenty-from">{{amount}} {{from}} =</p>
+                        <p class="currenty-to">{{exchangeRateTxt}} {{to}}</p>
+                </div>
+                <div class="change-theme">
+                        <button pButton label="Change Theme"  (click)="changeTheme()" class="cursor-pointer"></button>
+                       
+                </div>
+        </header>
+       
+
+        <div class="select-currency">
+                <div class="currency-from">
+                        <p-dropdown   [options]="flags" [(ngModel)]="from"  placeholder="Select Currency"></p-dropdown>
+                       
+                </div>
+                <div class="currency-change">
+                        <img src="assets/R.png" (click)="changeCurrency()" alt="">
+                </div>
+                <div class="currency-to">
+                        <p-dropdown  [options]="flags" [(ngModel)]="to"  placeholder="Select Currency"></p-dropdown>
+                </div>
+
+        </div>
+        <div class="input"><input (input)="getC()" type="text" pInputText [(ngModel)]="amount"/>
+        </div> 
+        <br>
+       <div class="calculate"></div> <button (click)="getC()" pButton type="button" label="Calculate" ></button>
+</div>
+
+
+
+
+
+<!--         
+        <div class="box">
+     
+                <button pButton label="Button"  (click)="changeTheme()" class="cursor-pointer"></button>
+                <app-current-currency></app-current-currency>
+
+                 
+                from<p-dropdown   [options]="flags" [(ngModel)]="from"  placeholder="Select Currency"></p-dropdown>| <button (click)="changeCurrency()">change</button> |to
+                <p-dropdown  [options]="flags" [(ngModel)]="to"  placeholder="Select Currency"></p-dropdown><br>
+         
+                amount <input (input)="getC()" type="text" pInputText [(ngModel)]="amount"/> <br>  
+                <button (click)="getC()" pButton type="button" label="Click" ></button>
+         
+         <hr>
+         {{exchangeRateTxt}}
+
+        </div> -->

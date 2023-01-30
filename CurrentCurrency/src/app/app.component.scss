@@ -1,0 +1,59 @@
+
+.wrapper {
+  max-width: 50%;
+  margin: 15% auto ;
+  text-align: center;
+  align-items: center;
+  border: 5px solid #2196F3;
+  padding: 3% 3% 1% 3% ;
+  background-color: #459be199;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.result {
+}
+.currenty-from {
+  font-weight: 700;
+  font-size: 20px;
+}
+.currenty-to{
+  font-weight: 700;
+  font-size: 40px;
+}
+.change-theme {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  margin: 1%;
+}
+.cursor-pointer {
+}
+.select-currency {
+   display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.currency-from {
+}
+.currency-change img{
+  width: 10%;
+}
+.currency-to {
+}
+
+input{
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3%;
+}
+
+button{
+  width: 100% ;
+}
+
+
